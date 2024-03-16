@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 1050px;
+  min-height: 1485px;
+  font-family: Times New Roman, Times, -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+  font-size: 16px;
+  background-color: #fff6e8;
+  box-sizing: content-box;
+  padding: 40px 0;
+  margin: auto;
+}
+
+#resume {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: #aaa 0 0 8px;
+}
+#resume header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  background-color: #875239;
+  padding: 32px 40px;
+}
+#resume header .avatar {
+  width: 125px;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+#resume header .avatar img {
+  width: 100%;
+  height: 100%;
+}
+#resume header .header__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#resume header .header__content .name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#resume header .header__content .name .self-evaluation {
+  font-size: 16px;
+  font-weight: normal;
+}
+#resume header .header__content .description {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#resume header .header__content .description .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#resume header .header__content .description .info .intention {
+  font-size: 20px;
+}
+#resume header .header__content .description .info .basic-info {
+  margin: 0;
+}
+#resume header .header__content .description .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  text-align: right;
+}
+#resume header .header__content .description .contact .contact__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#resume header .header__content .description .contact .contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#resume header .header__content .description .contact .contact__list .contact-list__item {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 8px;
+}
+#resume header .header__content .description .contact .contact__list .contact-list__item .contact-list__item-text {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+}
+#resume header .header__content .description .contact .contact__list .contact-list__item .contact-list__item-icon {
+  height: 18px;
+}
+#resume main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #e4d3c1;
+  padding: 32px 40px;
+}
+#resume main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+#resume main section .section__title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 4px;
+  border-bottom: 2px dashed #000;
+}
+#resume main section .section__title img {
+  height: 1.2em;
+}
+#resume main section .section__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 1.5;
+}
+#resume main section .section__item .section__item-title {
+  display: flex;
+  justify-content: space-between;
+}
+#resume main section .section__item .section__item-title .section__item-title-info {
+  font-weight: bold;
+}
+#resume main section .section__item .section__item-description ul {
+  list-style: disc inside;
+}
+#resume main section .section__item .section__item-description ul li {
+  text-indent: -1.5em;
+  padding-left: 1.5em;
+}
+#resume main section .double-column {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+#resume main section .double-column.compact {
+  justify-content: start;
+  gap: 2em;
+}
+#resume code {
+  font-family: Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: inherit;
+  white-space: nowrap;
+}
+
+@media print {
+  body {
+    background-color: #e4d3c1;
+    padding: 0;
+  }
+  #resume {
+    overflow: visible;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .break-before {
+    -moz-column-break-before: page;
+         break-before: page;
+    margin-top: 32px;
+  }
+}/*# sourceMappingURL=index.css.map */
